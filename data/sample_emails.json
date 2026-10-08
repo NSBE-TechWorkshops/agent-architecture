@@ -1,0 +1,86 @@
+[
+  {
+    "id": "m01",
+    "sender": "Northwind Systems University Recruiting <university@northwind-systems.example>",
+    "subject": "Applications open: Cloud Engineering Intern, Summer 2027",
+    "date": "2026-10-07",
+    "body": "Hi there,\n\nNorthwind Systems is now accepting applications for our Cloud Engineering Intern program for Summer 2027. Interns work on real infrastructure projects with AWS and Kubernetes.\n\nApplications close on 2026-10-31. Apply early, we review on a rolling basis.\n\nBest,\nNorthwind University Recruiting"
+  },
+  {
+    "id": "m02",
+    "sender": "Contoso Cloud Talent <talent@contoso-cloud.example>",
+    "subject": "Interview invitation: Software Engineering Intern",
+    "date": "2026-10-08",
+    "body": "Hello,\n\nThanks for applying to the Software Engineering Intern role at Contoso Cloud. We'd like to invite you to a 45-minute technical interview.\n\nPlease pick a time slot using the scheduling link no later than 2026-10-10. Slots are first come, first served.\n\nGood luck!\nContoso Cloud Talent Team"
+  },
+  {
+    "id": "m03",
+    "sender": "Fabrikam Careers <noreply@fabrikam-careers.example>",
+    "subject": "Action required: Online assessment for Data Engineering Intern",
+    "date": "2026-10-06",
+    "body": "Hi,\n\nThank you for your interest in the Data Engineering Intern position at Fabrikam. The next step is a 60-minute online coding assessment.\n\nYou must complete the assessment by 2026-10-13. The link expires after that date.\n\nFabrikam Careers"
+  },
+  {
+    "id": "m04",
+    "sender": "Initech Early Careers <early.careers@initech.example>",
+    "subject": "Update on your Platform Engineering Internship application",
+    "date": "2026-10-05",
+    "body": "Dear applicant,\n\nThank you for taking the time to apply for the Platform Engineering Internship. After careful review, we have decided not to move forward with your application at this time. We encourage you to apply again in the future.\n\nSincerely,\nInitech Early Careers"
+  },
+  {
+    "id": "m05",
+    "sender": "Globex Corporation Recruiting <recruiting@globex.example>",
+    "subject": "Offer: DevOps Intern, Summer 2027",
+    "date": "2026-10-08",
+    "body": "Congratulations!\n\nWe are thrilled to offer you the DevOps Intern position at Globex Corporation for Summer 2027. Please review the attached offer letter and respond by 2026-10-15.\n\nWarm regards,\nGlobex Recruiting"
+  },
+  {
+    "id": "m06",
+    "sender": "NSBE Chapter <chapter@nsbe.example>",
+    "subject": "Career Fair next week: bring your resume!",
+    "date": "2026-10-06",
+    "body": "Hey members,\n\nOur fall career fair is on 2026-10-14 in the Student Union. Acme Robotics, Umbrella Health, and Northwind Systems will be recruiting for internships and co-ops. Bring printed resumes and dress professionally.\n\nSee you there,\nNSBE Chapter Board"
+  },
+  {
+    "id": "m07",
+    "sender": "Acme Robotics <hiring@acme-robotics.example>",
+    "subject": "Reminder: Embedded Software Co-op application closes soon",
+    "date": "2026-10-07",
+    "body": "Hi,\n\nJust a reminder that the application for our Embedded Software Co-op (Spring 2027) closes on 2026-10-09. You started your application but have not submitted it yet.\n\nAcme Robotics Hiring"
+  },
+  {
+    "id": "m08",
+    "sender": "Pizza Palace <deals@pizzapalace.example>",
+    "subject": "2 large pizzas for $15 this weekend only!",
+    "date": "2026-10-07",
+    "body": "Hungry? Get two large pizzas for just $15 this weekend. Use code STUDY15 at checkout."
+  },
+  {
+    "id": "m09",
+    "sender": "Campus Bookstore <hello@campusbooks.example>",
+    "subject": "Your order has shipped",
+    "date": "2026-10-04",
+    "body": "Your order #48213 (Operating Systems textbook) has shipped and should arrive in 3 to 5 business days."
+  },
+  {
+    "id": "m10",
+    "sender": "Umbrella Health Tech <students@umbrella-health.example>",
+    "subject": "Application received: Cloud Security Intern",
+    "date": "2026-10-03",
+    "body": "Hi,\n\nWe have received your application for the Cloud Security Intern role at Umbrella Health Tech. Our team will review it and reach out within 2 to 3 weeks if there is a match.\n\nThank you,\nUmbrella Health Tech Students Team"
+  },
+  {
+    "id": "m11",
+    "sender": "Professor Williams <williams@university.example>",
+    "subject": "Office hours moved to Thursday",
+    "date": "2026-10-06",
+    "body": "Hi class, office hours this week are moved to Thursday 3pm. Bring questions about the midterm."
+  },
+  {
+    "id": "m12",
+    "sender": "Hooli Careers <jobs@hooli.example>",
+    "subject": "New internship posting: Site Reliability Engineering Intern (Summer 2027)",
+    "date": "2026-10-02",
+    "body": "A new internship matching your saved search was posted: Site Reliability Engineering Intern, Summer 2027, Remote. Applications are open until 2026-11-15."
+  }
+]

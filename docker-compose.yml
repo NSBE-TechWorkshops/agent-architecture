@@ -1,0 +1,41 @@
+# docker compose describes the whole app: which containers to run and how they connect.
+#
+#   docker compose up --build        -> starts the API  (http://localhost:8000/docs)
+#   docker compose run --rm tui      -> opens the terminal UI that talks to the API
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000" # host:container. Lets your browser reach http://localhost:8000
+    environment:
+      # ${VAR:-default} reads from your shell or the .env file, falling back to a default.
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      OPENAI_MODEL: ${OPENAI_MODEL:-gpt-4o-mini}
+      EMAIL_SOURCE: ${EMAIL_SOURCE:-mock}
+      GMAIL_MAX_RESULTS: ${GMAIL_MAX_RESULTS:-25}
+      DEMO_STEP_DELAY: ${DEMO_STEP_DELAY:-0.8}
+    volumes:
+      # Only needed for EMAIL_SOURCE=gmail: shares your token file with the container (read-only).
+      - ./secrets:/app/secrets:ro
+    healthcheck:
+      # Docker runs this every few seconds. "healthy" means the API really answers requests.
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 5s
+
+  tui:
+    build: .
+    profiles: ["tui"] # not started by `up`; only when you ask with `run`
+    command: ["python", "-m", "tui.app"]
+    depends_on:
+      api:
+        condition: service_healthy # wait until the API is ready
+    environment:
+      # Containers on the same compose network reach each other by SERVICE NAME ("api"), not localhost.
+      API_URL: http://api:8000
+      TERM: xterm-256color
+      COLORTERM: truecolor
+    stdin_open: true # keep stdin open so keyboard input works
+    tty: true # give the container a terminal
