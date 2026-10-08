@@ -1,4 +1,4 @@
-# Internship Agent (NSBE Cloud Workshop)
+# Internship Agent (NSBE Workshop)
 
 A small AI agent that reads your email and tells you which internship updates need attention first.
 It is built to teach four cloud-era ideas in one project:
